@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
 import Button from "@/app/_components/button";
-import { sendEmail } from "@/app/_actions/actions";
+import { sendEmail } from "@/_actions/actions";
 import classNames from "classnames";
 
 interface Props {

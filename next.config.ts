@@ -3,8 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
-    deviceSizes: [425, 800, 1400],
-    imageSizes: [425, 800, 1400],
+    deviceSizes: [425, 800, 1280],
+    imageSizes: [425, 800, 1280],
   },
 };
 

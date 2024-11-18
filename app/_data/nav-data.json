@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "url": "/"
+  },
+  {
+    "title": "Catalogue",
+    "url": "/catalogue"
+  },
+  {
+    "title": "About Us",
+    "url": "/#about"
+  },
+  {
+    "title": "Enquire Now",
+    "url": "#"
+  },
+  {
+    "title": "Contact Us",
+    "url": "/#contact"
+  }
+]

@@ -1,48 +1,100 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
-import data from "@/app/_data/general-data.json";
-import SocialIcons from "@/app/_lib/social-icons";
+import navData from "@/app/_data/nav-data.json";
 
-const { navigation } = data;
-
-interface Props {
-  cssClasses?: string;
-}
-
-const Footer = ({ cssClasses }: Props) => {
+const Footer = () => {
   return (
-    <footer className={`pt-12 pb-8 tablet:pb-5 tablet:bg-blue ${cssClasses}`}>
-      <div className="flex gap-10 flex-col px-5 items-center tablet:px-10 tablet:grid grid-cols-2 tablet:gap-5 desktop:max-w-[1280px] desktop:mx-auto">
-        <div>
-          <nav className="hidden tablet:block">
-            <ul className="flex flex-col font-light text-[14px] gap-1">
-              {navigation.map((item, index) => (
-                <li key={index} className="text-beige hover:text-pink mr-auto">
-                  <Link href={item.url}>{item.title}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <SocialIcons cssClasses="tablet:hidden" pink />
-          <SocialIcons cssClasses="mt-2 hidden tablet:flex" pink small />
+    <footer className="px-5 pt-6 pb-8 border-t-4 border-purple tablet:px-15 tablet:pt-10 tablet:pb-5">
+      <div className="max-w-[1280px] mx-auto grid gap-5 tablet:grid-cols-2 tablet:gap-y-2">
+        <ul className="hidden tablet:block list-none pl-0">
+          {navData.map(({ title, url }, index) => (
+            <li
+              key={index}
+              className={index !== navData.length - 1 ? "mb-0.5" : ""}
+            >
+              <Link
+                href={url}
+                className="text-paragraph hover:underline underline-offset-2"
+              >
+                {title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="grid gap-5 tablet:place-items-end">
+          <ul className="list-none pl-0 flex flex-wrap gap-4 justify-around items-center phone:justify-center phone:gap-8 tablet:gap-5">
+            <li>
+              <Link href="/" target="_blank">
+                <Image
+                  src="/assets/real-brides-logo-black.png"
+                  alt="Real Brides logo"
+                  width={60}
+                  height={60}
+                  className="drop-shadow-none tablet:hover:opacity-80 ease-in-out duration-200"
+                />
+              </Link>
+            </li>
+            <li>
+              <Link href="https://www.neonproductions.co.za/" target="_blank">
+                <Image
+                  src="/assets/images/vendors/neon-productions-logo.jpg"
+                  alt="Neon Productions logo"
+                  width={60}
+                  height={60}
+                  className="w-[60px] h-auto drop-shadow-none tablet:hover:opacity-80 ease-in-out duration-200"
+                />
+              </Link>
+            </li>
+            <li>
+              <Link href="https://pink-book.co.za/" target="_blank">
+                <Image
+                  src="/assets/images/vendors/pink-book-logo.png"
+                  alt="Pink Book logo"
+                  width={60}
+                  height={60}
+                  className="drop-shadow-none tablet:hover:opacity-80 ease-in-out duration-200"
+                />
+              </Link>
+            </li>
+            <li>
+              <Link href="https://sellmyweddingdress.co.za/" target="_blank">
+                <Image
+                  src="/assets/images/vendors/sell-my-dress-logo.png"
+                  alt="Sell My Dress logo"
+                  width={60}
+                  height={60}
+                  className="w-[60px] h-auto drop-shadow-none tablet:hover:opacity-80 ease-in-out duration-200"
+                />
+              </Link>
+            </li>
+          </ul>
+          <h4 className="hidden normal-case text-paragraph font-light text-right tablet:grid">
+            Designed & developed by{" "}
+            <Link
+              href="https://thewrightdesigns.co.za"
+              className=" text-paragraph text-link ml-auto tablet:hover:underline underline-offset-2"
+            >
+              The Wright Designs
+            </Link>
+          </h4>
         </div>
-        <Link
-          href="/"
-          className="hidden place-self-end tablet:block tablet:hover:opacity-90"
-        >
-          <Image
-            src="/assets/the-wright-designs-logo.png"
-            alt="The Wright Designs logo"
-            className="w-[200px] h-auto tablet:self-end rotate-1"
-            width={200}
-            height={52}
-          />
-        </Link>
-        <h4 className="text-center font-light text-paragraph tablet:text-[14px] tablet:text-beige col-span-2 place-self-center normal-case">
-          © The Wright Designs |{" "}
-          <Link href="/" className="tablet:hover:text-pink">
-            www.thewrightdesigns.co.za
+        <h3 className="normal-case text-paragraph grid text-center mx-auto font-light tablet:col-span-2 tablet:block">
+          © 2024 Real Brides{" "}
+          <Link
+            href="/"
+            className=" text-paragraph text-link p-2 -m-2 tablet:hover:underline underline-offset-2 tablet:p-0 tablet:m-0"
+          >
+            www.realbrides.co.za
+          </Link>
+        </h3>
+        <h4 className="normal-case text-paragraph grid text-center font-light mx-auto tablet:hidden">
+          Designed & developed by{" "}
+          <Link
+            href="https://thewrightdesigns.co.za"
+            className=" text-paragraph text-link p-2 -m-2"
+          >
+            The Wright Designs
           </Link>
         </h4>
       </div>

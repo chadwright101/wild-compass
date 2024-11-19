@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    background-color: #eae3cd;
+    background-color: #FCFCFC;
   }
 
   * {
@@ -29,10 +29,6 @@
 
   p {
     @apply text-paragraph text-justify;
-  }
-
-  button {
-    @apply text-[20px] font-bold tracking-[0.025rem]
   }
 }
 

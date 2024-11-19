@@ -6,7 +6,6 @@ import { useFormStatus } from "react-dom";
 
 interface Props {
   backgroundColor?: "khaki" | "grey";
-  secondaryColor?: "khaki" | "grey";
   onClick?: () => void;
   typeSubmit?: boolean;
   children?: React.ReactNode;
@@ -17,26 +16,19 @@ interface Props {
   disabled?: boolean;
 }
 
-const buttonStyles = ({ cssClasses, secondaryColor, backgroundColor }: Props) =>
+const buttonStyles = ({ cssClasses, backgroundColor }: Props) =>
   classNames(
-    `flex gap-3 w-full items-center text-white justify-center rounded drop-shadow-md uppercase ease-in-out duration-300 ${cssClasses}`,
+    `flex gap-3 w-full items-center text-[20px] font-bold tracking-[0.025rem] text-white justify-center uppercase ease-in-out duration-300 py-1 px-7 ${cssClasses}`,
     {
-      "px-10 py-3": !secondaryColor,
-      "desktopSmall:hover:px-[44px] desktopSmall:hover:-mx-1": backgroundColor,
-      "desktopSmall:hover:px-10 desktopSmall:hover:-mx-1": secondaryColor,
-      "px-9 py-2": secondaryColor,
-      "bg-khaki desktopSmall:hover:bg-khaki/90": backgroundColor === "khaki",
-      "bg-grey desktopSmall:hover:bg-grey/90": backgroundColor === "grey",
-      "bg-white border-4 border-khaki desktopSmall:hover:bg-khaki":
-        secondaryColor === "khaki",
-      "bg-white border-4 border-grey desktopSmall:hover:bg-grey":
-        secondaryColor === "grey",
+      "bg-khaki border-4 border-khaki desktop:hover:bg-transparent desktop:hover:text-khaki":
+        backgroundColor === "khaki",
+      "bg-grey border-4 border-grey desktop:hover:bg-transparent desktop:hover:text-grey":
+        backgroundColor === "grey",
     }
   );
 
 const Button = ({
   backgroundColor = "khaki",
-  secondaryColor,
   onClick,
   typeSubmit,
   children,
@@ -55,7 +47,6 @@ const Button = ({
         target={target}
         className={buttonStyles({
           cssClasses,
-          secondaryColor,
           backgroundColor,
         })}
         aria-label={children as string}
@@ -68,7 +59,6 @@ const Button = ({
       <button
         className={buttonStyles({
           cssClasses,
-          secondaryColor,
           backgroundColor,
         })}
         type={typeSubmit ? "submit" : "button"}

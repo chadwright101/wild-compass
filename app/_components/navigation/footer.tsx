@@ -6,8 +6,8 @@ import SocialIcons from "@/app/_lib/social-icons";
 
 const Footer = () => {
   return (
-    <footer className="px-7 pt-7 pb-8 mt-10 border-t border-white bg-grey tablet:px-15 tablet:pt-10 tablet:pb-5">
-      <div className="max-w-[1280px] mx-auto grid gap-5 tablet:grid-cols-2 tablet:gap-y-2">
+    <footer className="pt-7 pb-8 mt-10 border-t border-white bg-grey tablet:pt-10 tablet:pb-5">
+      <div className="px-7 max-w-[1280px] mx-auto grid gap-5 tablet:grid-cols-2 tablet:gap-y-2 tablet:px-10">
         <ul className="hidden tablet:block list-none pl-0">
           {navData.map(({ title, url }, index) => (
             <li

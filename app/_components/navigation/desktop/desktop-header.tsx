@@ -11,7 +11,7 @@ interface Props {
 const DesktopHeader = ({ cssClasses }: Props) => {
   return (
     <div
-      className={`py-5 px-[52px] max-w-[1280px] mx-auto justify-between w-full items-end ${cssClasses}`}
+      className={`py-5 max-w-[1280px] mx-auto justify-between w-full items-end px-7 min-[1326px]:px-0 ${cssClasses}`}
     >
       <Link
         href="/"
@@ -19,10 +19,9 @@ const DesktopHeader = ({ cssClasses }: Props) => {
       >
         <Image
           src="/assets/wild-compass-logo-no-text.png"
-          alt="Real Brides logo"
+          alt="Wild Compass logo"
           width={52}
           height={53}
-          className="drop-shadow-none hover:opacity-80 ease-in-out duration-200"
           priority
         />
         <h1 className="text-white font-afacad font-semibold text-[24px] tracking-[0.03rem] leading-[18px] uppercase">

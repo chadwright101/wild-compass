@@ -4,7 +4,7 @@ interface Props {
 
 const ContentWrapper = ({ children }: Props) => {
   return (
-    <div className="px-7 max-w-[1280px] mx-auto desktop:px-10">{children}</div>
+    <div className="px-7 desktop:px-10 max-w-[1280px] mx-auto">{children}</div>
   );
 };
 

@@ -1,10 +1,11 @@
-import Image from "next/image";
 import Button from "./_components/button";
+import HeroComponent from "./_components/home-page/hero/hero-component";
 import ContentWrapper from "./_utils/content-wrapper";
 
 export default function Home() {
   return (
     <main>
+      <HeroComponent />
       <ContentWrapper>
         <h1>Heading</h1>
         <h3>Subheading</h3>

@@ -1,33 +1,8 @@
 {
   "heroSlider": [
-    {
-      "src": "/assets/images/hero-slideshow/monks-medical-hero.png",
-      "alt": "Monk's Medical"
-    },
-    {
-      "src": "/assets/images/hero-slideshow/xorbtec-hero.png",
-      "alt": "Xorbtec Computer Services"
-    },
-    {
-      "src": "/assets/images/hero-slideshow/real-brides-magazine-hero.png",
-      "alt": "Real Brides Magazine"
-    },
-    {
-      "src": "/assets/images/hero-slideshow/luna-blue-hero.png",
-      "alt": "Luna Blue Villas"
-    },
-    {
-      "src": "/assets/images/hero-slideshow/adopt-a-swimmer-hero.png",
-      "alt": "Adopt a Swimmer logo"
-    },
-    {
-      "src": "/assets/images/hero-slideshow/carevita-hero.png",
-      "alt": "CareVita"
-    },
-    {
-      "src": "/assets/images/hero-slideshow/simone-snoyman-physiotherapy-hero.png",
-      "alt": "Simone Snoyman Physiotherapy"
-    }
+    "/assets/placeholders/_MG_7081-HDR.jpg",
+    "/assets/placeholders/_MG_7084-HDR.jpg",
+    "/assets/placeholders/_MG_7101-HDR.jpg"
   ],
   "contact": {
     "email": "chad@thewrightdesigns.co.za",

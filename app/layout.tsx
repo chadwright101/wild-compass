@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+/* import type { Metadata } from "next"; */
 
 import Header from "./_components/navigation/header";
 import Footer from "./_components/navigation/footer";

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
 import Button from "@/app/_components/button";
-import { sendEmail } from "@/_actions/actions";
+import { sendEmail } from "@/app/_actions/actions";
 import classNames from "classnames";
 
 interface Props {
@@ -17,7 +17,7 @@ const ContactForm = ({ cssClasses }: Props) => {
   const [validateRecaptcha, setValidateRecaptcha] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const handleRecaptchaChange = (value: any) => {
+  const handleRecaptchaChange = (value: string | null) => {
     if (value === null) {
       setValidateRecaptcha(false);
       console.log("Recaptcha expired");
@@ -103,8 +103,7 @@ const ContactForm = ({ cssClasses }: Props) => {
                 setShowMessage(true);
               }}
               cssClasses="justify-center tablet:w-[135px] tablet:justify-between"
-              form
-              buttonColor="pink"
+              normalButton
             >
               Next
             </Button>
@@ -140,8 +139,8 @@ const ContactForm = ({ cssClasses }: Props) => {
                   }
                 )}
                 disabled={!validateRecaptcha}
-                form
-                buttonColor="pink"
+                normalButton
+                typeSubmit
               >
                 Submit
               </Button>

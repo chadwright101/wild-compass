@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..600;1,400..600&family=Raleway:ital,wght@0,400..600;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #fcfcfc;
+  }
+
+  * {
+    color: #515558;
+    font-family: "afacad", Tahoma, sans-serif;
+  }
+
+  h1,
+  h2 {
+    font-family: "raleway", Tahoma, sans-serif;
+    @apply text-heading;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-subheading uppercase;
+  }
+
+  p {
+    @apply text-paragraph text-justify;
+  }
+}
+
+@layer components {
+  .spinner {
+    width: 22.75px;
+    height: 22.75px;
+    position: relative;
+  }
+
+  .spinner::before,
+  .spinner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid transparent;
+    border-top-color: #fcfcfc;
+    animation: spin 1s linear infinite;
+  }
+
+  .spinner::after {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/* swiper styles */
+
+.swiper-pagination-v {
+  left: -30px !important;
+}
+
+.swiper,
+.swiper-pagination-bullets-dynamic {
+  overflow: visible !important;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

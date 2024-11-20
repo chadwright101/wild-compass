@@ -22,7 +22,7 @@ const buttonStyles = ({ cssClasses, backgroundColor }: Props) =>
     {
       "bg-khaki border-4 border-khaki desktop:hover:bg-transparent desktop:hover:text-khaki":
         backgroundColor === "khaki",
-      "bg-grey border-4 border-grey desktop:hover:bg-transparent desktop:hover:text-grey":
+      "bg-grey border-4 border-white desktop:hover:bg-white desktop:hover:text-grey":
         backgroundColor === "grey",
     }
   );

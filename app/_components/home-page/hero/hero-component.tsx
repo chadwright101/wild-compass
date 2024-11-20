@@ -8,7 +8,7 @@ const { heroSlider } = data;
 
 const HeroComponent = () => {
   return (
-    <div className="relative max-w-[1280px] mx-auto">
+    <section className="relative max-w-[1280px] mx-auto">
       <div className="overflow-hidden mb-10 tablet:mb-0">
         <HeroSlider
           data={heroSlider}
@@ -22,14 +22,14 @@ const HeroComponent = () => {
               Welcome to{" "}
               <span className="font-semibold">Wild Compass Events</span>
             </h2>
-            <h3 className="text-paragraph italic">
+            <h3 className="text-paragraph italic normal-case">
               An event hire company servicing the Garden Route, South Africa.
             </h3>
           </div>
           <Button>View Catalogue</Button>
         </section>
       </ContentWrapper>
-    </div>
+    </section>
   );
 };
 

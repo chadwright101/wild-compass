@@ -14,9 +14,9 @@ const AboutUs = () => {
             servicing the entire Garden Route.
           </p>
           <p className="mb-5">
-            Whether you're planning a wedding, corporate event, or a special
-            celebration, we provide all the essential equipment to make your
-            event unforgettable.
+            Whether you&apos;re planning a wedding, corporate event, or a
+            special celebration, we provide all the essential equipment to make
+            your event unforgettable.
           </p>
           <p className="mb-5">
             Our extensive range includes elegant tables and chairs, stylish

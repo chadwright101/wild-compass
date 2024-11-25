@@ -1,5 +1,5 @@
 import ContentWrapper from "@/app/_utils/content-wrapper";
-import ThumbnailSlider from "./gallery/thumbnail-slider";
+import ThumbnailSlider from "./thumbnail-slider";
 
 const GallerySlider = () => {
   return (

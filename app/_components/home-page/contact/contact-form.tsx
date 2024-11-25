@@ -27,7 +27,7 @@ const ContactForm = () => {
     }
   }, [showEmailSubmitted]);
 
-  const handleRecaptchaChange = (value: any) => {
+  const handleRecaptchaChange = (value: string | null) => {
     if (value === null) {
       setValidateRecaptcha(false);
       console.log("Recaptcha expired");

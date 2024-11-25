@@ -1,26 +1,25 @@
 {
   "heroSlider": [
-    "/assets/placeholders/_MG_7081-HDR.jpg",
-    "/assets/placeholders/_MG_7084-HDR.jpg",
-    "/assets/placeholders/_MG_7101-HDR.jpg"
+    "/assets/images/al-elmes-ULHxWq8reao-unsplash.jpg",
+    "/assets/images/hannah-busing-6NUUZZ16hJk-unsplash.jpg",
+    "/assets/images/Jess-Claudio-CharlieRay-28-Copy.jpg",
+    "/assets/images/kate-mike-belle-balance-game-reserve-wedding-sharyn-hodges-240.jpg",
+    "/assets/images/thomas-william-nAvodiKjbTM-unsplash.jpg",
+    "/assets/images/Gallery-10.jpg"
   ],
   "gallerySlider": [
-    "/assets/placeholders/_MG_7081-HDR.jpg",
-    "/assets/placeholders/_MG_7084-HDR.jpg",
-    "/assets/placeholders/_MG_7101-HDR.jpg",
-    "/assets/placeholders/_MG_7081-HDR.jpg",
-    "/assets/placeholders/_MG_7084-HDR.jpg",
-    "/assets/placeholders/_MG_7101-HDR.jpg",
-    "/assets/placeholders/_MG_7081-HDR.jpg",
-    "/assets/placeholders/_MG_7084-HDR.jpg",
-    "/assets/placeholders/_MG_7101-HDR.jpg",
-    "/assets/placeholders/_MG_7081-HDR.jpg",
-    "/assets/placeholders/_MG_7084-HDR.jpg",
-    "/assets/placeholders/_MG_7101-HDR.jpg"
+    "/assets/images/Canapes-Reception-007-EMJ_9825.jpg",
+    "/assets/images/andrew-knechel-gG6yehL64fo-unsplash.jpg",
+    "/assets/images/andreas-ronningen-S2YssLw97l4-unsplash.jpg",
+    "/assets/images/ian-schneider-PAykYb-8Er8-unsplash.jpg",
+    "/assets/images/matheus-ferrero-KuGwl8e_FDo-unsplash.jpg",
+    "/assets/images/mitchell-orr---LyFIjXoFY-unsplash.jpg",
+    "/assets/images/photos-by-lanty-93S-IZXfxBM-unsplash.jpg",
+    "/assets/images/sandy-millar-Tnlo6k_EMAo-unsplash.jpg",
+    "/assets/images/tristan-gassert-IRzq8sDxb7w-unsplash.jpg"
   ],
   "contact": {
-    "email": "chad@thewrightdesigns.co.za",
-    "phone": "+27 83 390 5238",
-    "address": "1 Piesang Valley Road, Plettenberg Bay, 6600"
+    "email": "create@wildcompassexperiences.com",
+    "phone": "+27 61 009 3643"
   }
 }

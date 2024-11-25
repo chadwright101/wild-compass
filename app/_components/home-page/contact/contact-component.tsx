@@ -42,7 +42,7 @@ const ContactComponent = () => {
                   {showEmail === "Show email address" ? (
                     <button
                       onClick={handleShowEmailAddress}
-                      className="text-paragraph py-3 px-2 -my-3 -mx-2 hover:cursor-pointer tablet:p-0 tablet:m-0 italic text-linkBlue place-self-start tablet:-mt-1"
+                      className="text-paragraph py-3 px-2 -my-3 -mx-2 hover:cursor-pointer tablet:p-0 tablet:m-0 italic text-linkBlue place-self-start -mt-4 tablet:-mt-1"
                       aria-label="Show email address"
                     >
                       {showspinnerEmail ? (
@@ -56,7 +56,7 @@ const ContactComponent = () => {
                   ) : (
                     <Link
                       href={`mailto:${showEmail}`}
-                      className="text-paragraph self-center tablet:hover:text-pink place-self-start text-linkBlue tablet:-mt-1"
+                      className="text-paragraph self-center tablet:hover:text-pink place-self-start text-linkBlue -mt-1"
                     >
                       {showEmail}
                     </Link>
@@ -67,12 +67,12 @@ const ContactComponent = () => {
                   {showPhone === "Show phone number" ? (
                     <button
                       onClick={handleShowPhoneNumber}
-                      className="text-paragraph py-3 px-2 -my-3 -mx-2 hover:cursor-pointer tablet:p-0 tablet:m-0 italic text-linkBlue place-self-start tablet:-mt-1"
+                      className="text-paragraph py-3 px-2 -my-3 -mx-2 hover:cursor-pointer tablet:p-0 tablet:m-0 italic text-linkBlue place-self-start -mt-4 tablet:-mt-1"
                       aria-label="Show phone number"
                     >
                       {showspinnerPhone ? (
                         <>
-                          <div className="spinner-grey tablet:mt-[5px]"></div>
+                          <div className="spinner-grey mt-[5px]"></div>
                         </>
                       ) : (
                         showPhone
@@ -81,7 +81,7 @@ const ContactComponent = () => {
                   ) : (
                     <Link
                       href={`tel:${showPhone}`}
-                      className="text-paragraph self-center tablet:hover:text-pink place-self-start text-linkBlue tablet:-mt-1"
+                      className="text-paragraph self-center tablet:hover:text-pink place-self-start text-linkBlue -mt-1"
                     >
                       {showPhone}
                     </Link>
@@ -89,11 +89,11 @@ const ContactComponent = () => {
                 </div>
                 <SocialIcons grey />
               </div>
-              <div className="hidden tablet:flex justify-end gap-4 flex-col desktop:flex-row">
+              <div className="hidden tablet:flex gap-4 flex-col desktop:place-self-end">
                 <h4 className="normal-case">Chat to us on WhatsApp:</h4>
-                <div className="w-20 h-20">
+                <div className="w-20 h-20 desktop:ml-auto">
                   <Image
-                    src="/assets/placeholders/WhatsApp.png"
+                    src="/assets/wild-compass-whatsapp-contact.png"
                     alt="Contact us on WhatsApp"
                     width={80}
                     height={80}
@@ -108,9 +108,9 @@ const ContactComponent = () => {
           </div>
           <div className="hidden desktop:block">
             <Image
-              src="/assets/placeholders/_MG_7081-HDR.jpg"
+              src="/assets/images/Website-Photo-3.JPG"
               alt="Wild Compass Events"
-              width={580}
+              width={1000}
               height={850}
               className="w-full h-full object-cover"
             />

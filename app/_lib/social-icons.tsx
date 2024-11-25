@@ -100,7 +100,7 @@ const SocialIcons = ({ cssClasses, small, grey }: Props) => {
         </li>
         <li>
           <Link
-            href=""
+            href="https://wa.me/27610093643?src=qr"
             className="grid h-10 w-10 -mx-2.5 -my-1.5 place-items-center tablet:hover:opacity-80 ease-in-out duration-200"
             target="_blank"
             aria-label="Get in touch on WhatsApp"

@@ -50,6 +50,7 @@ const ThumbnailSlider = ({ cssClasses, desktop }: Props) => {
           effect="fade"
           loop
           thumbs={{ swiper: thumbsSwiper }}
+          className="h-[550px] desktop:h-[600px]"
         >
           {gallerySlider.map((slide, index) => (
             <SwiperSlide key={index} className="pb-0 -mb-2">
@@ -57,8 +58,8 @@ const ThumbnailSlider = ({ cssClasses, desktop }: Props) => {
                 src={slide}
                 alt={`Wild Compass - Image ${index + 1}`}
                 className="w-full h-full object-cover"
-                width={900}
-                height={540}
+                width={1280}
+                height={600}
                 loading={index < 1 ? "eager" : "lazy"}
               />
             </SwiperSlide>
@@ -70,20 +71,19 @@ const ThumbnailSlider = ({ cssClasses, desktop }: Props) => {
           <Swiper
             onSwiper={setThumbsSwiper}
             spaceBetween={10}
-            slidesPerView={4}
-            slidesPerGroup={2}
-            loop={true}
+            slidesPerView={6}
+            slidesPerGroup={3}
             modules={[Thumbs, Navigation]}
             navigation={{
               enabled: true,
             }}
             breakpoints={{
               1000: {
-                slidesPerView: 6,
+                slidesPerView: 8,
                 slidesPerGroup: 3,
               },
             }}
-            className="mt-4 relative px-8"
+            className="h-[75px] mt-2 relative px-8"
           >
             {gallerySlider.map((slide, index) => (
               <SwiperSlide

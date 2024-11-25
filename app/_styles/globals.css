@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: #fcfcfc;
   }
@@ -57,6 +61,30 @@
     animation-delay: 0.5s;
   }
 
+  .spinner-grey {
+    width: 16px;
+    height: 16px;
+    position: relative;
+  }
+
+  .spinner-grey::before,
+  .spinner-grey::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid transparent;
+    border-top-color: #515558;
+    animation: spin 1s linear infinite;
+  }
+
+  .spinner-grey::after {
+    animation-delay: 0.5s;
+  }
+
   @keyframes spin {
     from {
       transform: rotate(0deg);
@@ -70,6 +98,14 @@
 
 /* swiper styles */
 
+:root {
+  --swiper-pagination-color: #ae8f5f;
+  --swiper-pagination-bullet-inactive-color: #ae8f5f;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+}
+
 .swiper-pagination-v {
   left: -30px !important;
 }
@@ -79,16 +115,36 @@
   overflow: visible !important;
 }
 
-@keyframes scrollAnimation {
-  0% {
-    transform: translateX(0);
-  }
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px !important;
+  height: 100% !important;
+  @apply bg-white/80;
+  top: 22px !important;
+  transition: all 0.2s ease;
+}
 
-  50% {
-    transform: translateX(-100px);
-  }
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  color: #ae8f5f;
+  transition: color 0.2s ease;
+}
 
-  100% {
-    transform: translateX(0);
-  }
+.swiper-button-next {
+  right: 0 !important;
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  @apply bg-khaki/80;
+}
+
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+  color: white;
 }

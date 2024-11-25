@@ -33,7 +33,7 @@ const AboutUs = () => {
           <Button url="/#contact">Get in touch</Button>
         </div>
         <Image
-          src="/assets/placeholders/_MG_7081-HDR.jpg"
+          src="/assets/images/evelina-friman-hw_sKmjb0ns-unsplash.jpg"
           alt="Wild Compass Events"
           width={600}
           height={400}

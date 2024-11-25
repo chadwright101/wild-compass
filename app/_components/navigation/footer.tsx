@@ -33,7 +33,7 @@ const Footer = () => {
             height={66}
             className="hidden tablet:block"
           />
-          <h4 className="hidden text-white text-paragraph font-light text-right tablet:grid">
+          <h4 className="hidden text-white text-paragraph font-light normal-case text-right tablet:grid">
             Designed & developed by{" "}
             <Link
               href="https://thewrightdesigns.co.za"
@@ -43,7 +43,7 @@ const Footer = () => {
             </Link>
           </h4>
         </div>
-        <h3 className="hidden tablet:block col-span-2 text-white text-paragraph gap-2 text-center mx-auto ">
+        <h3 className="hidden tablet:block col-span-2 text-white text-paragraph gap-2 text-center mx-auto normal-case ">
           © 2024 Wild Compass Events |{" "}
           <Link
             href="/"
@@ -52,7 +52,7 @@ const Footer = () => {
             www.wildcompassevents.co.za
           </Link>
         </h3>
-        <h3 className="text-white text-paragraph grid text-center mx-auto tablet:hidden">
+        <h3 className="text-white text-paragraph grid text-center normal-case mx-auto tablet:hidden">
           © Wild Compass Events{" "}
           <Link
             href="/"
@@ -68,7 +68,7 @@ const Footer = () => {
           height={88}
           className="mx-auto tablet:hidden"
         />
-        <h4 className="text-white text-paragraph text-center font-light mx-auto flex flex-wrap justify-center gap-x-1 tablet:hidden">
+        <h4 className="text-white text-paragraph text-center font-light mx-auto flex flex-wrap justify-center gap-x-1 normal-case tablet:hidden">
           Designed & developed by{" "}
           <Link
             href="https://thewrightdesigns.co.za"

@@ -3,13 +3,13 @@ export const emailTemplate = ({ name, email, message }) => {
   <head>
     <meta charSet="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Wright Designs</title>
+    <title>Wild Compass Events</title>
   </head>
   <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0;">
-    <table style="width: 100%; background-color: #C86B7B;">
+    <table style="width: 100%; background-color: #AE8F5F;">
       <tr>
         <td>
-          <h1 style="padding: 1rem;">The Wright Designs</h1>
+          <h1 style="padding: 1rem;">Wild Compass Events</h1>
         </td>
       </tr>
     </table>

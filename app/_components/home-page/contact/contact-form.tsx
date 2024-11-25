@@ -10,7 +10,7 @@ import { sendEmail } from "@/app/_actions/actions";
 
 const ContactForm = () => {
   const [submissionStartTime, setSubmissionStartTime] = useState(0);
-  const [validateRecaptcha, setValidateRecaptcha] = useState(false);
+  const [validateRecaptcha, setValidateRecaptcha] = useState(true);
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
 
@@ -45,13 +45,13 @@ const ContactForm = () => {
   return (
     <div className={showEmailSubmitted ? "pt-10 tablet:pt-5" : ""}>
       {!showEmailSubmitted && (
-        <p className="mb-5 text-white tablet:text-left">
-          Please fill out the form below and we will be in touch ASAP...
+        <p className="mb-5 text-white italic tablet:text-left">
+          Fill out the form below and our team will get back to you ASAP...
         </p>
       )}
       {showEmailSubmitted ? (
         <>
-          <p className="text-[20px] text-center text-white tablet:text-left pb-5">
+          <p className="text-[20px] text-center text-white italic tablet:text-left pb-5">
             Your email has been sent, we will be in touch soon.
           </p>
         </>
@@ -73,7 +73,7 @@ const ContactForm = () => {
               type="email"
               id="emailAddress"
               name="email"
-              className="border border-black/50 bg-white h-10 py-4 px-3 rounded font-thin"
+              className="border border-black/50 bg-white h-10 py-4 px-3"
               placeholder="Type your email address here..."
               autoComplete="email"
               required
@@ -89,7 +89,7 @@ const ContactForm = () => {
               type="text"
               id="fullName"
               name="name"
-              className="border border-black/50 bg-white h-10 py-4 px-3 rounded font-thin"
+              className="border border-black/50 bg-white h-10 py-4 px-3"
               placeholder="Type your full name here..."
               autoComplete="name"
               required
@@ -123,6 +123,7 @@ const ContactForm = () => {
               </label>
               <Button
                 typeSubmit
+                normalButton
                 cssClasses={classNames("tablet:self-start", {
                   "opacity-75 desktop:cursor-not-allowed desktop:hover:px-9 desktop:hover:mx-0":
                     !validateRecaptcha,

@@ -36,7 +36,7 @@ const ContactComponent = () => {
         <div className="desktop:grid grid-cols-2 gap-x-10">
           <div className="grid tablet:grid-cols-[1fr_2fr] gap-10 desktop:grid-cols-1">
             <div className="flex flex-col gap-y-8 desktop:grid desktop:grid-cols-2">
-              <div className="grid gap-8 tablet:gap-6">
+              <div className="flex flex-col gap-8 tablet:gap-6">
                 <div className="grid gap-1 phone:grid-cols-[60px_1fr]">
                   <h3 className="text-subheading">Email:</h3>
                   {showEmail === "Show email address" ? (
@@ -89,7 +89,7 @@ const ContactComponent = () => {
                 </div>
                 <SocialIcons grey />
               </div>
-              <div className="hidden tablet:flex gap-4 flex-col desktop:place-self-end">
+              <div className="hidden tablet:flex gap-4 flex-col desktop:justify-self-end">
                 <h4 className="normal-case">Chat to us on WhatsApp:</h4>
                 <div className="w-20 h-20 desktop:ml-auto">
                   <Image

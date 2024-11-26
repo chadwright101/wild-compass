@@ -72,7 +72,7 @@ const MobileHeader = ({ cssClasses }: Props) => {
             <li
               key={index}
               className={classNames({
-                "order-last mt-4": title === "Enquire Now",
+                "order-last mt-6": title === "Enquire Now",
               })}
             >
               <Link

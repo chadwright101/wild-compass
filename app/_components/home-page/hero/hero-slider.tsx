@@ -42,8 +42,8 @@ const HeroSlider = ({ cssClasses, data }: Props) => {
             src={slide}
             alt={`Wild Compass - Image ${index + 1}`}
             className="rounded-none w-full h-full object-cover"
-            width={900}
-            height={540}
+            width={1280}
+            height={600}
             loading={index < 1 ? "eager" : "lazy"}
           />
         </SwiperSlide>

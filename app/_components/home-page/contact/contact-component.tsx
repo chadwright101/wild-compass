@@ -95,8 +95,8 @@ const ContactComponent = () => {
                   <Image
                     src="/assets/wild-compass-whatsapp-contact.png"
                     alt="Contact us on WhatsApp"
-                    width={80}
-                    height={80}
+                    width={120}
+                    height={120}
                     className="w-full h-full object-cover"
                   />
                 </div>

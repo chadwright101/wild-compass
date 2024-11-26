@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <HeroComponent />
-      <div className="-translate-y-10" id="about"></div>
+      <div className="-translate-y-10 tablet:-translate-y-12" id="about"></div>
       <AboutUs />
       <EnquiryForm />
       <div

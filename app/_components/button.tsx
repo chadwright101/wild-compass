@@ -32,7 +32,7 @@ const buttonStyles = ({
         backgroundColor === "grey" && !strokeWhite,
       "bg-khaki border-4 border-white desktop:hover:bg-white desktop:hover:text-grey":
         backgroundColor === "khaki" && strokeWhite && !disabled,
-      "bg-khaki border-4 border-white":
+      "bg-khaki border-4 border-white cursor-not-allowed":
         backgroundColor === "khaki" && strokeWhite && disabled,
     }
   );

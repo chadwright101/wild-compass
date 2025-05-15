@@ -29,6 +29,8 @@ const NavItem = ({ title, url }: NavItemProps) => {
           }
         )}
         onClick={() => scrollIntoView(url)}
+        target={title === "Enquire Now" ? "_blank" : "_self"}
+        rel={title === "Enquire Now" ? "noopener noreferrer" : undefined}
       >
         {title}
       </Link>

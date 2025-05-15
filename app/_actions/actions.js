@@ -45,7 +45,7 @@ export async function sendEmail(formData) {
       const mailOptions = {
         from: process.env.SMTP_SEND_TO,
         to: process.env.SMTP_SEND_TO,
-        subject: "Website form submission - The Wright Designs",
+        subject: "Website form submission - Wild Compass Events",
         replyTo: email,
         html: emailHtmlContent,
       };

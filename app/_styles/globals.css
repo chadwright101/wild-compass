@@ -43,8 +43,8 @@
 
 @layer components {
   .spinner {
-    width: 22.75px;
-    height: 22.75px;
+    width: 24px;
+    height: 24px;
     position: relative;
   }
 

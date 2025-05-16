@@ -15,6 +15,7 @@ interface Props {
   target?: string;
   normalButton?: boolean;
   disabled?: boolean;
+  pending?: boolean;
 }
 
 const buttonStyles = ({
@@ -22,18 +23,19 @@ const buttonStyles = ({
   backgroundColor,
   strokeWhite,
   disabled,
+  pending,
 }: Props) =>
   classNames(
-    `flex gap-3 w-full items-center text-[20px] font-bold tracking-[0.025rem] text-white justify-center uppercase ease-in-out duration-300 py-1 px-7 ${cssClasses}`,
+    `flex gap-3 w-full items-center text-[20px] font-bold tracking-[0.025rem] text-white justify-center uppercase ease-in-out duration-300 px-7 h-[46px] ${cssClasses}`,
     {
       "bg-khaki border-4 border-khaki desktop:hover:bg-transparent desktop:hover:text-khaki":
         backgroundColor === "khaki" && !strokeWhite,
       "bg-grey border-4 border-white desktop:hover:bg-white desktop:hover:text-grey":
         backgroundColor === "grey" && !strokeWhite,
       "bg-khaki border-4 border-white desktop:hover:bg-white desktop:hover:text-grey":
-        backgroundColor === "khaki" && strokeWhite && !disabled,
+        backgroundColor === "khaki" && strokeWhite && !disabled && !pending,
       "bg-khaki border-4 border-white cursor-not-allowed":
-        backgroundColor === "khaki" && strokeWhite && disabled,
+        backgroundColor === "khaki" && strokeWhite && (disabled || pending),
     }
   );
 
@@ -50,6 +52,7 @@ const Button = ({
   strokeWhite,
 }: Props) => {
   const { pending } = useFormStatus();
+  const isPending = pending;
 
   if (!normalButton) {
     return (
@@ -61,6 +64,7 @@ const Button = ({
           backgroundColor,
           strokeWhite,
           disabled,
+          pending: false,
         })}
         aria-label={children as string}
       >
@@ -75,13 +79,19 @@ const Button = ({
           backgroundColor,
           strokeWhite,
           disabled,
+          pending: isPending,
         })}
         type={typeSubmit ? "submit" : "button"}
         onClick={onClick}
-        disabled={disabled}
+        disabled={disabled || isPending}
+        aria-disabled={disabled || isPending}
         aria-label={children as string}
       >
-        {pending ? <div className="spinner"></div> : <>{children}</>}
+        {isPending && typeSubmit === true ? (
+          <div className="spinner"></div>
+        ) : (
+          <>{children}</>
+        )}
       </button>
     );
   }

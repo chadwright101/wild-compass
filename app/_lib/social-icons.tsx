@@ -17,7 +17,7 @@ interface Props {
 const SocialIcons = ({ cssClasses, small, grey }: Props) => {
   if (small) {
     return (
-      <ul className={`flex gap-2 ${cssClasses}`}>
+      <ul className={`flex w-full gap-2 ${cssClasses}`}>
         <li>
           <Link
             href="https://www.facebook.com/profile.php?id=61564297827070"

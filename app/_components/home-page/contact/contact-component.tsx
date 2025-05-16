@@ -47,7 +47,7 @@ const ContactComponent = () => {
                     >
                       {showspinnerEmail ? (
                         <>
-                          <div className="spinner-grey tablet:mt-[5px]"></div>
+                          <div className="spinner-grey mt-[2.5px]"></div>
                         </>
                       ) : (
                         showEmail
@@ -62,7 +62,7 @@ const ContactComponent = () => {
                     </Link>
                   )}
                 </div>
-                <div className="grid gap-1 justify-items-start phone:grid-cols-[60px_1fr]">
+                <div className="grid gap-1 phone:grid-cols-[60px_1fr]">
                   <h3 className="text-subheading">Phone:</h3>
                   {showPhone === "Show phone number" ? (
                     <button
@@ -72,7 +72,7 @@ const ContactComponent = () => {
                     >
                       {showspinnerPhone ? (
                         <>
-                          <div className="spinner-grey mt-[5px]"></div>
+                          <div className="spinner-grey mt-[2.5px]"></div>
                         </>
                       ) : (
                         showPhone

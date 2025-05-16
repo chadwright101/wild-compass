@@ -28,7 +28,15 @@ const NavItem = ({ title, url }: NavItemProps) => {
               title !== "Enquire Now",
           }
         )}
-        onClick={() => scrollIntoView(url)}
+        onClick={(e) => {
+          if (title === "Enquire Now" || title === "Catalogue") {
+            window.open(url, "_blank");
+            e.preventDefault();
+          } else {
+            scrollIntoView(url);
+          }
+        }}
+        rel={title === "Enquire Now" ? "noopener noreferrer" : undefined}
       >
         {title}
       </Link>

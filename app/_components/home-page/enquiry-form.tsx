@@ -14,9 +14,10 @@ const EnquiryForm = () => {
           </p>
         </div>
         <Button
-          url="#"
+          url="https://forms.gle/ykiVuQKUBRefb8xUA"
           backgroundColor="grey"
           cssClasses="min-[1100px]:my-auto"
+          target="_blank"
         >
           Enquiry Form
         </Button>

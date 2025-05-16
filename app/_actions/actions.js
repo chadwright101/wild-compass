@@ -43,9 +43,9 @@ export async function sendEmail(formData) {
         requireTLS: true,
       });
       const mailOptions = {
-        from: process.env.SMTP_SEND_TO,
+        from: process.env.SMTP_USER,
         to: process.env.SMTP_SEND_TO,
-        subject: "Website form submission - The Wright Designs",
+        subject: "Website form submission - Wild Compass Events",
         replyTo: email,
         html: emailHtmlContent,
       };

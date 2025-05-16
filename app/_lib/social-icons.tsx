@@ -20,7 +20,7 @@ const SocialIcons = ({ cssClasses, small, grey }: Props) => {
       <ul className={`flex gap-2 ${cssClasses}`}>
         <li>
           <Link
-            href=""
+            href="https://www.facebook.com/profile.php?id=61564297827070"
             target="_blank"
             className="tablet:tablet:hover:opacity-80 ease-in-out duration-200"
             aria-label="View our Facebook page"
@@ -35,7 +35,7 @@ const SocialIcons = ({ cssClasses, small, grey }: Props) => {
         </li>
         <li>
           <Link
-            href=""
+            href="https://www.instagram.com/wildcompassevents"
             target="_blank"
             className="tablet:tablet:hover:opacity-80 ease-in-out duration-200"
             aria-label="View our Instagram profile"
@@ -70,7 +70,7 @@ const SocialIcons = ({ cssClasses, small, grey }: Props) => {
       <ul className={`flex gap-5 ml-0.5 ${cssClasses}`}>
         <li>
           <Link
-            href=""
+            href="https://www.facebook.com/profile.php?id=61564297827070"
             className="grid h-10 w-10 -mx-2 -my-1.5 place-items-center tablet:hover:opacity-80 ease-in-out duration-200"
             target="_blank"
             aria-label="View our Facebook page"
@@ -85,7 +85,7 @@ const SocialIcons = ({ cssClasses, small, grey }: Props) => {
         </li>
         <li>
           <Link
-            href=""
+            href="https://www.instagram.com/wildcompassevents"
             className="grid h-10 w-10 -mx-2.5 -my-1.5 place-items-center tablet:hover:opacity-80 ease-in-out duration-200"
             target="_blank"
             aria-label="View our Instagram profile"

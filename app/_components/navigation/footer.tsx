@@ -24,7 +24,7 @@ const Footer = () => {
           ))}
           <SocialIcons small cssClasses="hidden tablet:flex mt-2" />
         </ul>
-        <div className="grid gap-5 tablet:justify-items-end items-start tablet:gap-0">
+        <div className="grid gap-5 place-content-center tablet:justify-items-end tablet:place-content-stretch tablet:place-items-start tablet:gap-0">
           <SocialIcons cssClasses="mx-auto tablet:hidden" />
           <Image
             src="/assets/wild-compass-logo.png"
@@ -38,6 +38,9 @@ const Footer = () => {
             <Link
               href="https://thewrightdesigns.co.za"
               className=" text-paragraph text-link ml-auto underline underline-offset-4 tablet:hover:text-khaki ease-in-out duration-200"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="The Wright Designs"
             >
               The Wright Designs
             </Link>
@@ -72,7 +75,10 @@ const Footer = () => {
           Designed & developed by{" "}
           <Link
             href="https://thewrightdesigns.co.za"
-            className=" text-paragraph text-link p-2 -m-2 underline underline-offset-4 tablet:hover:text-khaki ease-in-out duration-200"
+            className="text-paragraph text-link p-2 -m-2 underline underline-offset-4 tablet:hover:text-khaki ease-in-out duration-200"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="The Wright Designs"
           >
             The Wright Designs
           </Link>

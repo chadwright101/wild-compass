@@ -26,7 +26,12 @@ const HeroComponent = () => {
               An event hire company servicing the Garden Route, South Africa.
             </h3>
           </div>
-          <Button>View Catalogue</Button>
+          <Button
+            url="/assets/catalogues/catalogue-2025-wild-compass-events.pdf"
+            target="_blank"
+          >
+            View Catalogue
+          </Button>
         </section>
       </ContentWrapper>
     </section>

@@ -108,7 +108,7 @@ const ContactComponent = () => {
           </div>
           <div className="hidden desktop:block">
             <Image
-              src="/assets/images/Website-Photo-3.JPG"
+              src="/assets/images/2025/1e399a7f-bc1d-4906-8c33-e691ccbf2bf0.jpg"
               alt="Wild Compass Events"
               width={1000}
               height={850}

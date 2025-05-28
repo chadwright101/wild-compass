@@ -10,7 +10,7 @@ import { sendEmail } from "@/app/_actions/actions";
 
 const ContactForm = () => {
   const [submissionStartTime, setSubmissionStartTime] = useState(0);
-  const [validateRecaptcha, setValidateRecaptcha] = useState(false);
+  const [validateRecaptcha, setValidateRecaptcha] = useState(true);
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
 
@@ -72,7 +72,7 @@ const ContactForm = () => {
             <input
               type="email"
               id="emailAddress"
-              name="email"
+              name="emailAddress"
               className="border border-black/50 bg-white h-10 py-4 px-3"
               placeholder="Type your email address here..."
               autoComplete="email"
@@ -88,7 +88,7 @@ const ContactForm = () => {
             <input
               type="text"
               id="fullName"
-              name="name"
+              name="fullName"
               className="border border-black/50 bg-white h-10 py-4 px-3"
               placeholder="Type your full name here..."
               autoComplete="name"

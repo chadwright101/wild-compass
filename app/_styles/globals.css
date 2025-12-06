@@ -1,8 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..600;1,400..600&family=Raleway:ital,wght@0,400..600;1,400&display=swap");
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-*: initial;
+  --color-grey: #515558;
+  --color-white: #FCFCFC;
+  --color-khaki: #AE8F5F;
+  --color-linkBlue: #0000FF;
+  --color-transparent: transparent;
+
+  --text-paragraph: 1rem;
+  --text-paragraph--line-height: 21px;
+  --text-paragraph--letter-spacing: 0.01rem;
+  --text-paragraph--font-weight: 400;
+
+  --text-subheading: 1rem;
+  --text-subheading--line-height: 100%;
+  --text-subheading--letter-spacing: 0.02rem;
+  --text-subheading--font-weight: 600;
+
+  --text-heading: 1.875rem;
+  --text-heading--font-weight: 400;
+
+  --breakpoint-phone: 425px;
+  --breakpoint-tablet: 800px;
+  --breakpoint-desktop: 1280px;
+
+  --font-afacad: var(--font-afacad),
+    Tahoma,
+    sans-serif;
+  --font-raleway: var(--font-raleway),
+    Tahoma,
+    sans-serif;
+
+  --spacing-15: 60px;
+}
 
 @layer base {
   html {
@@ -11,16 +42,13 @@
 
   body {
     background-color: #fcfcfc;
-  }
-
-  * {
     color: #515558;
-    font-family: "afacad", Tahoma, sans-serif;
+    font-family: var(--font-afacad), Tahoma, sans-serif;
   }
 
   h1,
   h2 {
-    font-family: "raleway", Tahoma, sans-serif;
+    font-family: var(--font-raleway), Tahoma, sans-serif;
     @apply text-heading;
   }
 

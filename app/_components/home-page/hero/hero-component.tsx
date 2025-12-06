@@ -20,7 +20,9 @@ const HeroComponent = () => {
           <div className="grid gap-2">
             <h2 className="leading-[30px]">
               Welcome to{" "}
-              <span className="font-semibold">Wild Compass Events</span>
+              <span className="font-semibold font-afacad">
+                Wild Compass Events
+              </span>
             </h2>
             <h3 className="text-paragraph italic normal-case">
               An event hire company servicing the Garden Route, South Africa.

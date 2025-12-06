@@ -1,9 +1,26 @@
 import { Metadata } from "next";
+import { Afacad, Raleway } from "next/font/google";
 
 import Header from "./_components/navigation/header";
 import Footer from "./_components/navigation/footer";
 
 import "./_styles/globals.css";
+
+const afacad = Afacad({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-afacad",
+  display: "swap",
+});
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-raleway",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wildcompassevents.co.za"),
@@ -33,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${afacad.variable} ${raleway.variable} antialiased`}>
         <Header />
         {children}
         <Footer />

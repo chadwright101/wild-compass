@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import { Afacad, Raleway } from "next/font/google";
 
-import Header from "./_components/navigation/header";
-import Footer from "./_components/navigation/footer";
+import Header from "../_components/navigation/header";
+import Footer from "../_components/navigation/footer";
 
-import "./_styles/globals.css";
+import "@/_styles/globals.css";
 
 const afacad = Afacad({
   subsets: ["latin"],

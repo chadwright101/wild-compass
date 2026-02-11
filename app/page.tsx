@@ -1,8 +1,8 @@
-import AboutUs from "./_components/home-page/about-us";
-import ContactComponent from "./_components/home-page/contact/contact-component";
-import EnquiryForm from "./_components/home-page/enquiry-form";
-import GallerySlider from "./_components/home-page/gallery/gallery";
-import HeroComponent from "./_components/home-page/hero/hero-component";
+import AboutUs from "../_components/home-page/about-us";
+import ContactComponent from "../_components/home-page/contact/contact-component";
+import EnquiryForm from "../_components/home-page/enquiry-form";
+import GallerySlider from "../_components/home-page/gallery/gallery";
+import HeroComponent from "../_components/home-page/hero/hero-component";
 
 export default function Home() {
   return (

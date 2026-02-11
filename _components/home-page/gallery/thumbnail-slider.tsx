@@ -13,7 +13,7 @@ import {
   Thumbs,
 } from "swiper/modules";
 
-import data from "@/app/_data/general-data.json";
+import data from "@/_data/general-data.json";
 
 import "swiper/css";
 import "swiper/css/effect-fade";

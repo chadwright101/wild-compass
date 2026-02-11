@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import navData from "@/app/_data/nav-data.json";
-import SocialIcons from "@/app/_lib/social-icons";
+import navData from "@/_data/nav-data.json";
+import SocialIcons from "@/_lib/social-icons";
 
 const Footer = () => {
   return (

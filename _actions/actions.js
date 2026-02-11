@@ -1,8 +1,8 @@
 "use server";
 
-import data from "@/app/_data/general-data.json";
+import data from "@/_data/general-data.json";
 import nodemailer from "nodemailer";
-import { emailTemplate } from "@/app/_lib/email-template";
+import { emailTemplate } from "@/_lib/email-template";
 import express from "express";
 import rateLimit from "express-rate-limit";
 

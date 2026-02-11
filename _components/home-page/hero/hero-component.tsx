@@ -1,8 +1,8 @@
-import HeroSlider from "@/app/_components/home-page/hero/hero-slider";
+import HeroSlider from "@/_components/home-page/hero/hero-slider";
 
-import data from "@/app/_data/general-data.json";
+import data from "@/_data/general-data.json";
 import Button from "../../button";
-import ContentWrapper from "@/app/_utils/content-wrapper";
+import ContentWrapper from "@/_utils/content-wrapper";
 
 const { heroSlider } = data;
 

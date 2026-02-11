@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 import ReCAPTCHA from "react-google-recaptcha";
 
-import Button from "@/app/_components/button";
-import { sendEmail } from "@/app/_actions/actions";
+import Button from "@/_components/button";
+import { sendEmail } from "@/_actions/actions";
 import classNames from "classnames";
 
 interface Props {
@@ -136,7 +136,7 @@ const ContactForm = ({ cssClasses }: Props) => {
                     "opacity-50 desktopSmall:cursor-not-allowed":
                       !validateRecaptcha,
                     "hover:desktopSmall:opacity-90": validateRecaptcha,
-                  }
+                  },
                 )}
                 disabled={!validateRecaptcha}
                 normalButton

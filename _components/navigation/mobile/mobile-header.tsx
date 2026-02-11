@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 import classNames from "classnames";
 
-import navData from "@/app/_data/nav-data.json";
+import navData from "@/_data/nav-data.json";
 
 interface Props {
   cssClasses?: string;
@@ -64,7 +64,7 @@ const MobileHeader = ({ cssClasses }: Props) => {
           {
             "left-full": !showMenu,
             "left-0": showMenu,
-          }
+          },
         )}
       >
         <ul className="text-white grid gap-2 list-none px-7">
@@ -82,7 +82,7 @@ const MobileHeader = ({ cssClasses }: Props) => {
                   "text-white text-[20px] tracking-[0.02rem] uppercase p-3 -ml-3",
                   {
                     "bg-khaki p-2 -ml-2": title === "Enquire Now",
-                  }
+                  },
                 )}
                 onClick={() => setShowMenu(false)}
                 target={title === "Enquire Now" ? "_blank" : "_self"}

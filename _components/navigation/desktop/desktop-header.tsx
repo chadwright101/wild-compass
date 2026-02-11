@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import navData from "@/app/_data/nav-data.json";
+import navData from "@/_data/nav-data.json";
 import NavItem from "./nav-item";
 
 interface Props {

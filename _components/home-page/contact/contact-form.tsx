@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 
 import classNames from "classnames";
 
-import Button from "@/app/_components/button";
-import Recaptcha from "@/app/_lib/recaptcha";
-import { sendEmail } from "@/app/_actions/actions";
+import Button from "@/_components/button";
+import Recaptcha from "@/_lib/recaptcha";
+import { sendEmail } from "@/_actions/actions";
 
 const ContactForm = () => {
   const [submissionStartTime, setSubmissionStartTime] = useState(0);

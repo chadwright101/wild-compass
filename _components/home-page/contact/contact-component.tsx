@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 
-import ContentWrapper from "@/app/_utils/content-wrapper";
-import { showEmailAddress, showPhoneNumber } from "@/app/_actions/actions";
-import SocialIcons from "@/app/_lib/social-icons";
+import ContentWrapper from "@/_utils/content-wrapper";
+import { showEmailAddress, showPhoneNumber } from "@/_actions/actions";
+import SocialIcons from "@/_lib/social-icons";
 import Image from "next/image";
 import ContactForm from "./contact-form";
 

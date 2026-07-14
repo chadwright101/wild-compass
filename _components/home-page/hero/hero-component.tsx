@@ -29,7 +29,7 @@ const HeroComponent = () => {
             </h3>
           </div>
           <Button
-            url="/assets/catalogues/catalogue-2025-wild-compass-events.pdf"
+            url="/assets/catalogues/catalogue-2026-wild-compass-events.pdf"
             target="_blank"
           >
             View Catalogue
